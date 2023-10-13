@@ -4,7 +4,37 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5a6b591c-23d4-466c-aed3-23635468b00f" name="Changes" comment="" />
+    <list default="true" id="5a6b591c-23d4-466c-aed3-23635468b00f" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/components/CategoryForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/CategoryUpdateForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ProductForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/components/ProductUpdateForm.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/hooks/useToastHook.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/categories/update/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/create.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/index.tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/pages/products/update/[id].tsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/List.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListDetail.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/components/ListItem.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/interfaces/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/api/users/index.ts" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/index.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/[id].tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/users/index.tsx" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/tsconfig.json" beforeDir="false" afterPath="$PROJECT_DIR$/tsconfig.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/utils/sample-data.ts" beforeDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -12,6 +42,15 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+        <option value="TypeScript JSX File" />
+        <option value="TypeScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -28,23 +67,35 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
-    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
-    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
-    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
-    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
-    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;project.propVCSSupport.DirectoryMappings&quot;,
-    &quot;ts.external.directory.path&quot;: &quot;/root/PhpstormProjects/nexttest/node_modules/typescript/lib&quot;,
-    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/root/PhpstormProjects/nexttest/components",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
+    "nodejs_package_manager_path": "npm",
+    "settings.editor.selected.configurable": "project.propVCSSupport.DirectoryMappings",
+    "ts.external.directory.path": "/root/PhpstormProjects/nexttest/node_modules/typescript/lib",
+    "vue.rearranger.settings.migration": "true"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/components" />
+      <recent name="$PROJECT_DIR$/pages/products" />
+      <recent name="$PROJECT_DIR$/pages/categories" />
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/pages/categories/update" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/pages" />
+      <recent name="$PROJECT_DIR$/pages/categories" />
+      <recent name="$PROJECT_DIR$/pages/index" />
       <recent name="$PROJECT_DIR$" />
     </key>
   </component>
@@ -57,7 +108,11 @@
       <option name="presentableId" value="Default" />
       <updated>1697127869882</updated>
       <workItem from="1697127870919" duration="3130000" />
-      <workItem from="1697134639513" duration="652000" />
+      <workItem from="1697134639513" duration="777000" />
+      <workItem from="1697135543956" duration="56000" />
+      <workItem from="1697135812962" duration="3636000" />
+      <workItem from="1697140300017" duration="1027000" />
+      <workItem from="1697182261349" duration="24124000" />
     </task>
     <servers />
   </component>
