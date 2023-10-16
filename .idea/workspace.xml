@@ -6,8 +6,6 @@
   <component name="ChangeListManager">
     <list default="true" id="5a6b591c-23d4-466c-aed3-23635468b00f" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductUpdateForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductUpdateForm.tsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +44,7 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "/root/PhpstormProjects/nexttest/components",
+    "last_opened_file_path": "/root/PhpstormProjects/nexttest/pages",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -64,11 +62,11 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/pages" />
       <recent name="$PROJECT_DIR$/components" />
       <recent name="$PROJECT_DIR$/pages/products" />
       <recent name="$PROJECT_DIR$/pages/categories" />
       <recent name="$PROJECT_DIR$" />
-      <recent name="$PROJECT_DIR$/pages/categories/update" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/public" />
@@ -92,7 +90,7 @@
       <workItem from="1697135812962" duration="3636000" />
       <workItem from="1697140300017" duration="1027000" />
       <workItem from="1697182261349" duration="24322000" />
-      <workItem from="1697453204564" duration="11759000" />
+      <workItem from="1697453204564" duration="12842000" />
     </task>
     <task id="LOCAL-00001" summary="Next needs some FE changes and readme edit">
       <option name="closed" value="true" />
@@ -118,7 +116,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697474193328</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="fix number input">
+      <option name="closed" value="true" />
+      <created>1697474544936</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1697474544936</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -130,6 +136,7 @@
     <MESSAGE value="Next needs some FE changes and readme edit" />
     <MESSAGE value="smal design" />
     <MESSAGE value="Title changed" />
-    <option name="LAST_COMMIT_MESSAGE" value="Title changed" />
+    <MESSAGE value="fix number input" />
+    <option name="LAST_COMMIT_MESSAGE" value="fix number input" />
   </component>
 </project>
