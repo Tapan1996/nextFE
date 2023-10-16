@@ -92,7 +92,6 @@ const ProductUpdateForm: React.FC<ProductUpdateFormProps> = ({productId}) => {
         <form onSubmit={handleSubmit}>
 
 
-
             <label htmlFor="product_name" className="mb-1 text-sm font-semibold text-gray-600">
                 Product Name:
             </label>

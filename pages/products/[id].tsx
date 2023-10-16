@@ -8,7 +8,7 @@ import {toast} from "react-toastify";
 
 
 export default function Product({product}) {
-    useToastHook(product);
+    // useToastHook(product);
     const router = useRouter();
     const {id} = router.query;
 
@@ -37,7 +37,7 @@ export default function Product({product}) {
     };
     return (
 
-        <Layout title="Home | Next.js + TypeScript Example">
+        <Layout>
             <div className="rounded overflow-hidden shadow-lg">
                 <div className="bg-gray-200 text-gray-700 py-2 px-4 mt-5 font-semibold">
                     <h1 key={product.data.id}>{product.data.name} </h1>
@@ -54,8 +54,6 @@ export default function Product({product}) {
                 </div>
             </div>
         </Layout>
-
-
     )
 }
 
@@ -64,11 +62,9 @@ export async function getServerSideProps({params}) {
     const {publicRuntimeConfig} = getConfig();
     const apiUrl = publicRuntimeConfig.apiUrl;
 
-
     // Fetch data from the API using the id parameter
     const response = await fetch(apiUrl + `/api/products/${id}`);
     const product = await response.json();
-
     // Pass the fetched data as props
     return {
         props: {

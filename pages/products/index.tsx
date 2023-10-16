@@ -6,9 +6,9 @@ import useToastHook from "../../hooks/useToastHook";
 
 
 export default function Products({products}) {
-    useToastHook(products);
+    // useToastHook(products);
     return (
-        <Layout title="Home | Next.js + TypeScript Example">
+        <Layout>
             <Link className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
                   href="/products/create">New product</Link> {' '}
             <table className="min-w-full bg-gray-600">
@@ -34,17 +34,13 @@ export default function Products({products}) {
                 </tbody>
             </table>
         </Layout>
-
     )
 }
-
 
 export async function getServerSideProps({}) {
     const {publicRuntimeConfig} = getConfig();
     const apiUrl = publicRuntimeConfig.apiUrl;
     const req = await fetch(apiUrl + '/api/products');
-    const data = await req.json();
-
+    const data = await req.json()
     return {props: {products: data}}
-
 }

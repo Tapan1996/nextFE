@@ -10,7 +10,7 @@ type Props = {
     title?: string
 }
 
-const Layout = ({children, title = 'This is the default title'}: Props) => (
+const Layout = ({children, title = 'CRUD'}: Props) => (
 
     <div className=" text-slate-100 p-4 container mx-auto h-full w-full">
         <Head>

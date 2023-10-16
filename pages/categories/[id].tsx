@@ -8,7 +8,7 @@ import {toast} from "react-toastify";
 
 
 export default function Category({category}) {
-    useToastHook(category);
+    // useToastHook(category);
     const router = useRouter();
     const {id} = router.query;
 
@@ -36,7 +36,7 @@ export default function Category({category}) {
         }
     };
     return (
-        <Layout title="Home | Next.js + TypeScript Example">
+        <Layout>
             <div className="rounded overflow-hidden shadow-lg">
                 <div className="bg-gray-200 text-gray-700 py-2 px-4 mt-5 font-semibold">
                     <h1 key={category.data.id}>{category.data.name} </h1>
@@ -49,7 +49,6 @@ export default function Category({category}) {
                     <Link
                         className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
                         href={`/categories/update/${category.data.id}`}>Update</Link> {' '}
-
                 </div>
             </div>
         </Layout>
@@ -61,11 +60,9 @@ export async function getServerSideProps({params}) {
     const {publicRuntimeConfig} = getConfig();
     const apiUrl = publicRuntimeConfig.apiUrl;
 
-
     // Fetch data from the API using the id parameter
     const response = await fetch(apiUrl + `/api/categories/${id}`);
     const category = await response.json();
-
     // Pass the fetched data as props
     return {
         props: {

@@ -5,7 +5,7 @@ import CategoryForm from "../../components/CategoryForm";
 
 const ProductCreate = () => {
     return (
-        <Layout title="Home | Next.js + TypeScript Example">
+        <Layout>
             <div className="rounded overflow-hidden shadow-lg">
                 <div className="bg-gray-200 text-gray-700 py-2 px-4 mt-5 font-semibold">
                     <h1>Create a New Product</h1>

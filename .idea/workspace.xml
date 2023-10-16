@@ -5,16 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5a6b591c-23d4-466c-aed3-23635468b00f" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/components/Navbar.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/pages/_app.tsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/styles/global.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CategoryForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryForm.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/CategoryUpdateForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/CategoryUpdateForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/Layout.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/Layout.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/components/ProductForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductForm.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/components/ProductUpdateForm.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/components/ProductUpdateForm.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pages/about.tsx" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/categories/[id].tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/[id].tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/categories/create.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/create.tsx" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/pages/categories/index.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/pages/categories/index.tsx" afterDir="false" />
@@ -108,7 +102,7 @@
       <workItem from="1697135812962" duration="3636000" />
       <workItem from="1697140300017" duration="1027000" />
       <workItem from="1697182261349" duration="24322000" />
-      <workItem from="1697453204564" duration="10924000" />
+      <workItem from="1697453204564" duration="11488000" />
     </task>
     <task id="LOCAL-00001" summary="Next needs some FE changes and readme edit">
       <option name="closed" value="true" />
@@ -118,7 +112,15 @@
       <option name="project" value="LOCAL" />
       <updated>1697207326545</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="smal design">
+      <option name="closed" value="true" />
+      <created>1697473689977</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1697473689977</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -128,6 +130,7 @@
     <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
     <option name="CHECK_NEW_TODO" value="false" />
     <MESSAGE value="Next needs some FE changes and readme edit" />
-    <option name="LAST_COMMIT_MESSAGE" value="Next needs some FE changes and readme edit" />
+    <MESSAGE value="smal design" />
+    <option name="LAST_COMMIT_MESSAGE" value="smal design" />
   </component>
 </project>
