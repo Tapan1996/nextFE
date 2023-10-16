@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {ChangeEvent, useEffect, useState} from 'react';
 import {toast} from "react-toastify";
 import getConfig from "next/config";
 import {useRouter} from "next/router";
@@ -27,10 +27,10 @@ const CategoryUpdateForm: React.FC<CategoryUpdateFormProps> = ({categoryId}) => 
             }
         }
         fetchData();
-    })
-
-
-
+    },[])
+    const handleNameChange = (e: ChangeEvent<HTMLInputElement>) => {
+        setName(e.target.value);
+    };
 
 
     const handleSubmit = async (e: React.FormEvent) => {
@@ -62,17 +62,23 @@ const CategoryUpdateForm: React.FC<CategoryUpdateFormProps> = ({categoryId}) => 
     };
 
     return (
-        <form onSubmit={handleSubmit}>
-            <label>
+        <form>
+            <label htmlFor="category_name" className="mb-1 text-sm font-semibold text-gray-600">
                 Category Name:
-                <input
-                    required
-                    type="text"
-                    value={name}
-                    onChange={(e) => setName(e.target.value)}
-                />
             </label>
-            <button type="submit">Update Category</button>
+            <input
+                required
+                type="text"
+                value={name}
+                onChange={handleNameChange}
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
+            />
+
+            <button onClick={handleSubmit}
+                    className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"> Update
+                category
+            </button>
+
         </form>
     );
 };

@@ -13,32 +13,45 @@ export default function Category({category}) {
     const {id} = router.query;
 
     const handleDelete = async () => {
-        try {
-            const {publicRuntimeConfig} = getConfig();
-            const apiUrl = publicRuntimeConfig.apiUrl;
+        if (confirm('Are you sure you want to delete this category? This action will also delete all attached products.')) {
+            try {
+                const {publicRuntimeConfig} = getConfig();
+                const apiUrl = publicRuntimeConfig.apiUrl;
 
-            await fetch(apiUrl + `/api/categories/${id}`, {
-                method: 'DELETE'
-            }).then(response => response.json()).then((data) => {
-                    if (data.success) {
-                        router.push('/categories');
-                    } else {
-                        console.log(data);
-                        toast(data.message, {hideProgressBar: true, autoClose: 2000, type: 'error'})
+                await fetch(apiUrl + `/api/categories/${id}`, {
+                    method: 'DELETE'
+                }).then(response => response.json()).then((data) => {
+                        if (data.success) {
+                            router.push('/categories');
+                        } else {
+                            console.log(data);
+                            toast(data.message, {hideProgressBar: true, autoClose: 2000, type: 'error'})
+                        }
                     }
-                }
-            );
+                );
 
-        } catch (error) {
-            toast('Error', {hideProgressBar: true, autoClose: 2000, type: 'error'})
+            } catch (error) {
+                toast('Error', {hideProgressBar: true, autoClose: 2000, type: 'error'})
+            }
         }
     };
     return (
         <Layout title="Home | Next.js + TypeScript Example">
-            <h1 key={category.data.id}>{category.data.name} </h1>
+            <div className="rounded overflow-hidden shadow-lg">
+                <div className="bg-gray-200 text-gray-700 py-2 px-4 mt-5 font-semibold">
+                    <h1 key={category.data.id}>{category.data.name} </h1>
+                </div>
+                <div className="px-6 py-4">
+                    <button onClick={handleDelete}
+                            className="float-right bg-red-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2">Delete
+                        Category
+                    </button>
+                    <Link
+                        className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"
+                        href={`/categories/update/${category.data.id}`}>Update</Link> {' '}
 
-            <Link href={`/categories/update/${category.data.id}`} key={category.data.id}>Update</Link>{' '}
-            <button onClick={handleDelete}>Delete Category</button>
+                </div>
+            </div>
         </Layout>
     )
 }

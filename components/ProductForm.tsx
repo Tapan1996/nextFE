@@ -66,36 +66,55 @@ const ProductForm: React.FC = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
-                Name:
-                <input
-                    required
-                    type="text"
-                    value={name}
-                    onChange={handleNameChange}
-                />
-                Price:
-                <input
-                    type="number"
-                    step="0.01"
-                    value={price}
-                    required
-                    onChange={handlePriceChange}
-                />
-                Category:
-                <select name="category_id"
-                        onChange={(e) => setCategoryId(e.target.value)}
-                        required>
-                    <option value="">Select a category</option>
-                    {categories.map((category, key) => (
-                        <option key={'create_product' + key} value={category.id}>
-                            {category.name}
-                        </option>
-                    ))}
-                </select>
-
+            <label htmlFor="product_name" className="mb-1 text-sm font-semibold text-gray-600">
+                Product Name:
             </label>
-            <button type="submit">Create Product</button>
+            <input
+                id="product_name"
+                required
+                type="text"
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
+                placeholder="Product name"
+                value={name}
+                onChange={handleNameChange}
+            />
+
+
+            <label htmlFor="product_price" className="mb-1 text-sm font-semibold text-gray-600">
+                Price:
+            </label>
+            <input
+                id="product_price"
+                required
+                type="text"
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
+                value={price}
+                onChange={handlePriceChange}
+            />
+
+
+            <label htmlFor="category_id" className="mb-1 text-sm font-semibold text-gray-600">
+                Category:
+            </label>
+
+            <select id="category_id"
+                    className="py-2 px-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500 text-black"
+                    name="category_id"
+                    onChange={(e) => setCategoryId(e.target.value)}
+                    required>
+                <option value="">Select a category</option>
+                {categories.map((category, key) => (
+                    <option key={'create_product' + key} value={category.id}>
+                        {category.name}
+                    </option>
+                ))}
+            </select>
+
+
+            <button type="submit"
+                    className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"> Create
+                Product
+            </button>
         </form>
     );
 };

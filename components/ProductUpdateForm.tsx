@@ -90,25 +90,42 @@ const ProductUpdateForm: React.FC<ProductUpdateFormProps> = ({productId}) => {
     };
     return (
         <form onSubmit={handleSubmit}>
-            <label>
+
+
+
+            <label htmlFor="product_name" className="mb-1 text-sm font-semibold text-gray-600">
                 Product Name:
-                <input
-                    required
-                    type="text"
-                    value={name}
-                    onChange={handleNameChange}
-                />
             </label>
-            Price:
             <input
+                id="product_name"
                 required
-                type="number"
-                step="0.01"
+                type="text"
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
+                placeholder="Product name"
+                value={name}
+                onChange={handleNameChange}
+            />
+
+            <label htmlFor="product_price" className="mb-1 text-sm font-semibold text-gray-600">
+                Price:
+            </label>
+            <input
+                id="product_price"
+                required
+                type="text"
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
                 value={price}
                 onChange={handlePriceChange}
             />
-            Category:
+
+            <label htmlFor="category_id" className="mb-1 text-sm font-semibold text-gray-600">
+                Category:
+            </label>
+
+
             <select
+                id="category_id"
+                className="py-2 px-3 border border-gray-300 rounded focus:outline-none focus:border-blue-500 text-black"
                 value={category_id}
                 name="category_id"// Set the selected value using the state variable
                 onChange={(e) => setCategoryId(e.target.value)} // Handle selection changes
@@ -123,7 +140,11 @@ const ProductUpdateForm: React.FC<ProductUpdateFormProps> = ({productId}) => {
                 ))}
             </select>
 
-            <button type="submit">Update Product</button>
+
+            <button type="submit"
+                    className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"> Update
+                Product
+            </button>
         </form>
     );
 };

@@ -46,16 +46,23 @@ const CategoryForm: React.FC = () => {
 
     return (
         <form onSubmit={handleSubmit}>
-            <label>
+            <label htmlFor="category_name" className="mb-1 text-sm font-semibold text-gray-600">
                 Category Name:
-                <input
-                    required
-                    type="text"
-                    value={name}
-                    onChange={handleNameChange}
-                />
             </label>
-            <button type="submit">Create Category</button>
+            <input
+                id="category_name"
+                required
+                type="text"
+                className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
+                placeholder="Category name"
+                value={name}
+                onChange={handleNameChange}
+            />
+
+            <button type="submit"
+                    className="float-right bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded m-2"> Create
+                category
+            </button>
         </form>
     );
 };
