@@ -86,7 +86,8 @@ const ProductForm: React.FC = () => {
             <input
                 id="product_price"
                 required
-                type="text"
+                type="number"
+                step="0.01"
                 className="py-2 px-3 border border-gray-300 text-black rounded focus:outline-none focus:border-blue-500"
                 value={price}
                 onChange={handlePriceChange}
